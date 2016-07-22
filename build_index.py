@@ -8,7 +8,7 @@ import urllib
 def build_index():
     root_path = "drop"
     for file_name in sorted(os.listdir(root_path)):
-        print('<a href=/drop/{0}>{1}</a><br />'.format(urllib.quote(file_name), file_name))
+        print('<a href=drop/{0}>{1}</a><br />'.format(urllib.quote(file_name), file_name))
 
 
 def main():
